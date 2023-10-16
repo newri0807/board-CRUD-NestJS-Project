@@ -27,11 +27,11 @@ export class BoardsController {
   }
 
   // 파라미터 여러개 일때 가져오기
-  // http://localhost:3000/?id=123&text=ttt
+  // http://localhost:3000/boards?id=123&text=ttt
   // (@Param() params: string[])
 
   // 파라미터 1개 일때 가져오기
-  //http://localhost:3000?id=123
+  //http://localhost:3000/boards?id=9ea86b90-6be3-11ee-af75-d94506baf599
   @Get('/:id')
   getBoardById(@Param('id') id: string): Board {
     return this.BoardsService.getBoardById(id);
