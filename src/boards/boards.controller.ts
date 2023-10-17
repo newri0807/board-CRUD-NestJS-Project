@@ -9,8 +9,11 @@ import {
   Param,
   Patch,
   Post,
+  UsePipes,
+  ValidationPipe,
 } from '@nestjs/common';
 import { CreateBoardDto } from './dto/create-board.dto';
+import { BoardStatusValidationPipe } from './pipes/board-status-validation.pipe';
 
 @Controller('boards')
 export class BoardsController {
@@ -22,6 +25,7 @@ export class BoardsController {
   }
 
   @Post()
+  @UsePipes(ValidationPipe) // [PIPE] 유효성 검사 SET
   createBoard(@Body() createBoardDto: CreateBoardDto): Board {
     return this.BoardsService.createBoard(createBoardDto);
   }
@@ -32,6 +36,7 @@ export class BoardsController {
 
   // 파라미터 1개 일때 가져오기
   //http://localhost:3000/boards?id=9ea86b90-6be3-11ee-af75-d94506baf599
+
   @Get('/:id')
   getBoardById(@Param('id') id: string): Board {
     return this.BoardsService.getBoardById(id);
@@ -45,7 +50,7 @@ export class BoardsController {
   @Patch('/:id/status')
   updateBoardStatus(
     @Param('id') id: string,
-    @Body('status') status: BoardStatus,
+    @Body('status', BoardStatusValidationPipe) status: BoardStatus, // [ 커스텀 PIPE ] 유효성 검사 SET
   ) {
     return this.BoardsService.updateBoardStatus(id, status);
   }
