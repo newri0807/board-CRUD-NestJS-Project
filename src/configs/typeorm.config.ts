@@ -1,5 +1,6 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import * as dotenv from 'dotenv';
+import { Board } from 'src/boards/board.entity';
 
 dotenv.config();
 
@@ -10,6 +11,6 @@ export const typeORMConfig: TypeOrmModuleOptions = {
   username: 'postgres',
   password: process.env.DATABASE_PASSWORD || 'default_password',
   database: 'board-app',
-  entities: [__dirname + '/../**/*.entity.{js,ts'],
+  entities: [__dirname + '/../**/*.entity.{js,ts}', Board],
   synchronize: true,
 };
