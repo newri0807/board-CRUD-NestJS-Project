@@ -1,3 +1,5 @@
+import { AuthGuard } from '@nestjs/passport';
+import { UseGuards } from '@nestjs/common';
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { BoardsService } from './boards.service';
@@ -19,6 +21,7 @@ import { Board } from './board.entity';
 import { BoardStatus } from './board-status.enum';
 
 @Controller('boards')
+@UseGuards(AuthGuard())
 export class BoardsController {
   constructor(private BoardsService: BoardsService) {}
 
