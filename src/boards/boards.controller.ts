@@ -19,6 +19,8 @@ import { CreateBoardDto } from './dto/create-board.dto';
 import { BoardStatusValidationPipe } from './pipes/board-status-validation.pipe';
 import { Board } from './board.entity';
 import { BoardStatus } from './board-status.enum';
+import { GetUser } from 'src/auth/get-user.decorator';
+import { User } from 'src/auth/user.entity';
 
 @Controller('boards')
 @UseGuards(AuthGuard())
@@ -26,14 +28,17 @@ export class BoardsController {
   constructor(private BoardsService: BoardsService) {}
 
   @Get('/')
-  getAllBoard(): Promise<Board[]> {
-    return this.BoardsService.getAllBoards();
+  getAllBoard(@GetUser() user: User): Promise<Board[]> {
+    return this.BoardsService.getAllBoards(user);
   }
 
   @Post()
   @UsePipes(ValidationPipe)
-  createBoard(@Body() CreateBoardDto: CreateBoardDto): Promise<Board> {
-    return this.BoardsService.createBoard(CreateBoardDto);
+  createBoard(
+    @Body() CreateBoardDto: CreateBoardDto,
+    @GetUser() user: User,
+  ): Promise<Board> {
+    return this.BoardsService.createBoard(CreateBoardDto, user);
   }
 
   @Get('/:id')
@@ -42,16 +47,20 @@ export class BoardsController {
   }
 
   @Delete('/:id')
-  deleteBoard(@Param('id', ParseIntPipe) id): Promise<void> {
-    return this.BoardsService.deleteBoard(id);
+  deleteBoard(
+    @Param('id', ParseIntPipe) id,
+    @GetUser() user: User,
+  ): Promise<void> {
+    return this.BoardsService.deleteBoard(id, user);
   }
 
   @Patch('/:id/status')
   updateBoardStatus(
     @Param('id', ParseIntPipe) id: number,
     @Body('status', BoardStatusValidationPipe) status: BoardStatus,
+    @GetUser() user: User,
   ) {
-    return this.BoardsService.updateBoardStatus(id, status);
+    return this.BoardsService.updateBoardStatus(id, status, user);
   }
 
   // @Get('/')
