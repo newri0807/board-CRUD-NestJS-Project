@@ -1,7 +1,8 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 newri0807/board-CRUD-NestJS-Project is built on the following main stack:
+
 - [Jest](http://facebook.github.io/jest/) – Javascript Testing Framework
 - [Node.js](http://nodejs.org/) – Frameworks (Full Stack)
 - [PostgreSQL](http://www.postgresql.org/) – Databases
@@ -10,17 +11,20 @@ newri0807/board-CRUD-NestJS-Project is built on the following main stack:
 - [TypeScript](http://www.typescriptlang.org) – Languages
 - [RxJS](http://reactivex.io/rxjs/) – Concurrency Frameworks
 - [ESLint](http://eslint.org/) – Code Review
+- [Passport](http://passportjs.org/) – User Management and Authentication
 - [SuperTest](https://www.npmjs.com/package/supertest) – Javascript Testing Framework
 - [Prettier](https://prettier.io/) – Code Review
 - [TypeORM](https://typeorm.io/) – Microframeworks (Backend)
 - [NestJS](nestjs.com) – Frameworks (Full Stack)
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 newri0807/board-CRUD-NestJS-Project is built on the following main stack:
+
 - <img width='25' height='25' src='https://img.stackshare.io/service/830/jest.png' alt='Jest'/> [Jest](http://facebook.github.io/jest/) – Javascript Testing Framework
 - <img width='25' height='25' src='https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png' alt='Node.js'/> [Node.js](http://nodejs.org/) – Frameworks (Full Stack)
 - <img width='25' height='25' src='https://img.stackshare.io/service/1028/ASOhU5xJ.png' alt='PostgreSQL'/> [PostgreSQL](http://www.postgresql.org/) – Databases
@@ -29,20 +33,22 @@ newri0807/board-CRUD-NestJS-Project is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/1612/bynNY5dJ.jpg' alt='TypeScript'/> [TypeScript](http://www.typescriptlang.org) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/1796/984368.png' alt='RxJS'/> [RxJS](http://reactivex.io/rxjs/) – Concurrency Frameworks
 - <img width='25' height='25' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'/> [ESLint](http://eslint.org/) – Code Review
+- <img width='25' height='25' src='https://ucarecdn.com/8f3cac0e-b146-4f0f-878c-680a6671d804/' alt='Passport'/> [Passport](http://passportjs.org/) – User Management and Authentication
 - <img width='25' height='25' src='https://img.stackshare.io/no-img-open-source.png' alt='SuperTest'/> [SuperTest](https://www.npmjs.com/package/supertest) – Javascript Testing Framework
 - <img width='25' height='25' src='https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg' alt='Prettier'/> [Prettier](https://prettier.io/) – Code Review
 - <img width='25' height='25' src='https://img.stackshare.io/service/7419/20165699.png' alt='TypeORM'/> [TypeORM](https://typeorm.io/) – Microframeworks (Backend)
 - <img width='25' height='25' src='https://img.stackshare.io/service/8747/4zsOyxko_400x400.jpg' alt='NestJS'/> [NestJS](nestjs.com) – Frameworks (Full Stack)
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [newri0807/board-CRUD-NestJS-Project](https://github.com/newri0807/board-CRUD-NestJS-Project)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|40<br/>Tools used|11/10/23 <br/>Report generated|
+|40<br/>Tools used|12/14/23 <br/>Report generated|
 |------|------|
 </div>
 
@@ -186,10 +192,23 @@ Full tech stack [here](/techstack.md)
 </tr>
 </table>
 
+## Other (1)
+<table><tr>
+  <td align='center'>
+  <img width='36' height='36' src='https://ucarecdn.com/8f3cac0e-b146-4f0f-878c-680a6671d804/' alt='Passport'>
+  <br>
+  <sub><a href="http://passportjs.org/">Passport</a></sub>
+  <br>
+  <sub></sub>
+</td>
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (25)</h2>
+</tr>
+</table>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (25)
+
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (24)</h2>
+
+## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (24)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
@@ -208,7 +227,6 @@ Full tech stack [here](/techstack.md)
 |[config](https://www.npmjs.com/config)|v3.3.9|10/24/23|newri |MIT|N/A|
 |[eslint-config-prettier](https://www.npmjs.com/eslint-config-prettier)|v9.0.0|10/24/23|newri |MIT|N/A|
 |[eslint-plugin-prettier](https://www.npmjs.com/eslint-plugin-prettier)|v5.0.1|10/12/23|newri |MIT|N/A|
-|[passport](https://www.npmjs.com/passport)|v0.6.0|10/23/23|newri |MIT|N/A|
 |[passport-jwt](https://www.npmjs.com/passport-jwt)|v4.0.1|10/23/23|newri |MIT|N/A|
 |[pg](https://www.npmjs.com/pg)|v8.11.3|10/12/23|newri |MIT|N/A|
 |[reflect-metadata](https://www.npmjs.com/reflect-metadata)|v0.1.13|10/12/23|newri |Apache-2.0|N/A|
@@ -222,4 +240,4 @@ Full tech stack [here](/techstack.md)
 <br/>
 <div align='center'>
 
-Generated via [Stack File](https://github.com/apps/stack-file)
+Generated via [Stack File](https://github.com/marketplace/stack-file)
