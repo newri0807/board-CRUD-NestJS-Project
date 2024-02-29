@@ -2,7 +2,7 @@ repo_name: newri0807/board-CRUD-NestJS-Project
 report_id: 2f0d52dab8264fdca17fe500494a41ad
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:01:31+00:00'
+timestamp: '2024-02-29T18:28:16+00:00'
 requested_by: newri0807
 provider: github
 branch: main
@@ -163,7 +163,7 @@ tools:
   last_updated_by: newri
   last_updated_on: 2023-10-12 06:49:47.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 3.0.3
   license: MIT
@@ -177,7 +177,7 @@ tools:
   last_updated_by: newri
   last_updated_on: 2023-10-12 06:49:47.000000000 Z
 - name: SuperTest
-  description: 'A library for testing node.js HTTP servers '
+  description: A library for testing node.js HTTP servers
   website_url: https://www.npmjs.com/package/supertest
   version: 6.3.3
   license: MIT
